@@ -3,8 +3,8 @@
 
 <head>
     <title>Marvin N'DIAYE</title>
-    <link rel="stylesheet" href="./scss/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./scss/main.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="./img/computer.ico">
 </head>
 
 <body>
@@ -25,81 +25,119 @@
             <!-- Se présenter-->
             <div class="section__content">
                 <h1 class="section__title">Marvin N'DIAYE</h1>
-                <div>Etudiant en BTS SIO option ..., j'aime bien la cybersécurité et les Belvita</div>
+                <div>Amateur de nouvelles technologies et ayant un esprit curieux et logique, je me suis dirigé vers le domaine de l’informatique avec un BTS SIO.</div>
+                <div>J’apprécie résoudre des problèmes, aider les gens et toujours apprendre de nouvelles choses.</div>
+
+                <div>Paris/Île-de-France</div>
+
                 <div>Mes compétences</div>
+                <ul>
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                </ul>
                 <div>Mes certifications : x y & z</div>
-                <button class="btn">Télécharger mon CV</button>
+                <button class="download"><i class="fa fa-cloud-arrow-down"></i> CV</button>
             </div>
         </section>
         <section class="section section--fullpage" id="formation">
             <div class="section__content">
                 <h1 class="section__title">Formation</h1>
-                <h2>BTS SIO</h2>
-                <div>Dates et lycée</div>
-                <div>Présenter le BTS SIO et les 2 options SISR SLAM</div>
-                <h2>Baccalauréat Scientifique</h2>
-                <div>Dates et lycée</div>
+                <div class = "timeline">
+                    <div class="timeline__element">
+                        <h2 class="timeline__title">BTS SIO - Option SISR</h2>
+                        <div class="timeline__subtitle">Lycée René Descartes - Champs-sur-Marne - 2021 à 2023</div>
+                        <!-- Présenter le BTS SIO (Services Informatiques aux Organisations) et les 2 options SISR SLAM -->
+                        <button type="button" class="collapsible">En savoir plus sur le BTS SIO</button>
+                        <div class="content">
+                            <div class="content__text">
+                                <div>Le BTS SIO (Services Informatiques aux Organisations) est ... </div>
+                                <div>Il y a deux options :</div>
+                                <ul>
+                                    <li>
+                                        SISR (systemes réseaux....) : ---
+                                    </li>
+                                    <li>
+                                        SLAM (dev) : ----
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline__element">
+                        <h2 class="timeline__title">Baccalauréat Scientifique</h2>
+                        <div class="timeline__subtitle">Lycée Marcelin Berthelot - Pantin</div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="section section--fullpage" id="experience">
             <div class="section__content">
                 <h1 class="section__title">Expérience</h1>
-                <div>
-                    Stage 1
-                    <br/>
-                    Dates :
-                    <br/>
-                    Télécharger compte rendu de stage
-                </div>
-                <br/>
-                <div>
-                    Stage 2
-                    <br/>
-                    Dates :
-                    <br/>
-                    Télécharger compte rendu de stage
+                <div class = "timeline">
+                    <div class="timeline__element">
+                        <h2 class="timeline__title">Technicien Helpdesk</h2>
+                        <a href="./files/unknown.pdf" target="_blank"class="download"><i class="fa-solid fa-up-right-from-square fa-sm"></i> Rapport de stage</a>
+                        <div class="timeline__subtitle">Mairie de Pantin - Stage de janvier à mars 2023</div>
+                        <ul>
+                            <li>Suivi de tickets (GLPI)</li>
+                            <li>Installation de logiciels (Pack Office, PDFCreator)</li>
+                            <li>Déploiement d’images Windows</li>
+                        </ul>
+                    </div>
+                    <div class="timeline__element">
+                        <h2 class="timeline__title">Technicien Support </h2>
+                        <a href="./files/Rapport_stage_1ere_annee.pdf" target="_blank" class="download"><i class="fa-solid fa-up-right-from-square fa-sm"></i> Rapport de stage</a>
+                        <div class="timeline__subtitle">DRIEAT Île-de-France - Stage de juin à juillet 2022</div>
+                        
+                        <ul>
+                            <li>Mise à jour Windows et BIOS</li> 
+                            <li>Dépannage et remplacement de périphériques</li>
+                            <li>Installation de logiciels (Cryhod, TightVNC, WAPT)</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="section section--fullpage" id="projets">
             <div class="section__content">
                 <h1 class="section__title">Projets</h1>
-                <div>Voici mes projets et TP :)</div>
+                <div>Voici les projets et TP que j'ai effectués au cours de mon parcours : </div>
                 <div class="card-container">
                     <a href="./veille/DNS.html" class="card">
                         <img class="card__img" src="./img/dns.jpeg" alt="DNS illustration">
                         <div class="card__title">
-                            <div>Une faille dans les DNS wtf ??!</div>
+                            <div>TP DNS</div>
                         </div>
                     </a>
                     <a href="./veille/VPN.html" class="card">
                         <img class="card__img" src="./img/vpn.jpeg" alt="VPN illustration">
                         <div class="card__title">
-                            <div>VPN = arnaque ??</div>
+                            <div>TP VPN</div>
                         </div>
                     </a>
                     <a href="./veille/DNS.html" class="card">
                         <img class="card__img" src="./img/dns.jpeg" alt="DNS illustration">
                         <div class="card__title">
-                            <div>Une faille dans les DNS wtf ??!</div>
+                            <div>TP DNS</div>
                         </div>
                     </a>
                     <a href="./veille/VPN.html" class="card">
                         <img class="card__img" src="./img/vpn.jpeg" alt="VPN illustration">
                         <div class="card__title">
-                            <div>VPN = arnaque ??</div>
+                            <div>TP VPN</div>
                         </div>
                     </a>
                     <a href="./veille/DNS.html" class="card">
                         <img class="card__img" src="./img/dns.jpeg" alt="DNS illustration">
                         <div class="card__title">
-                            <div>Une faille dans les DNS wtf ??!</div>
+                            <div>TP DNS</div>
                         </div>
                     </a>
                     <a href="./veille/VPN.html" class="card">
                         <img class="card__img" src="./img/vpn.jpeg" alt="VPN illustration">
                         <div class="card__title">
-                            <div>VPN = arnaque ??</div>
+                            <div>TP VPN</div>
                         </div>
                     </a>
                 </div>
@@ -145,37 +183,37 @@
                     <a href="./veille/DNS.html" class="card">
                         <img class="card__img" src="./img/dns.jpeg" alt="DNS illustration">
                         <div class="card__title">
-                            <div>Une faille dans les DNS wtf ??!</div>
+                            <div>TP DNS</div>
                         </div>
                     </a>
                     <a href="./veille/VPN.html" class="card">
                         <img class="card__img" src="./img/vpn.jpeg" alt="VPN illustration">
                         <div class="card__title">
-                            <div>VPN = arnaque ??</div>
+                            <div>TP VPN</div>
                         </div>
                     </a>
                     <a href="./veille/DNS.html" class="card">
                         <img class="card__img" src="./img/dns.jpeg" alt="DNS illustration">
                         <div class="card__title">
-                            <div>Une faille dans les DNS wtf ??!</div>
+                            <div>TP DNS</div>
                         </div>
                     </a>
                     <a href="./veille/VPN.html" class="card">
                         <img class="card__img" src="./img/vpn.jpeg" alt="VPN illustration">
                         <div class="card__title">
-                            <div>VPN = arnaque ??</div>
+                            <div>TP VPN</div>
                         </div>
                     </a>
                     <a href="./veille/DNS.html" class="card">
                         <img class="card__img" src="./img/dns.jpeg" alt="DNS illustration">
                         <div class="card__title">
-                            <div>Une faille dans les DNS wtf ??!</div>
+                            <div>TP DNS</div>
                         </div>
                     </a>
                     <a href="./veille/VPN.html" class="card">
                         <img class="card__img" src="./img/vpn.jpeg" alt="VPN illustration">
                         <div class="card__title">
-                            <div>VPN = arnaque ??</div>
+                            <div>TP VPN</div>
                         </div>
                     </a>
                 </div>
@@ -184,13 +222,14 @@
         <footer class="section" id="contact">
             <div class="section__content">
                 <h1 class="section__title">Contact</h1>
-                <div>marvin@mail.com</div>
-                <div>LinkedIn</div>
-                <div>RootMe</div>
-                <div>Paris</div>
+                <div class="contact">
+                    <div><a href="mailto:marvin.ernest.nd@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a></div>
+                    <div><a href="https://www.linkedin.com/in/marvin-ndiaye/"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></div>
+                    <div><a href="https://www.root-me.org/MarvinND"><i class="fa-solid fa-skull-crossbones"></i>  Root Me</a></div>
+                </div>
             </div>
         </footer>
     </div>
+    <script src="./collapsible.js"></script>
 </body>
-
 </html>

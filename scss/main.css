@@ -6,13 +6,19 @@ html {
 body {
   background-color: #202020;
   color: #DFDFDF;
-  font-family: "Roboto", sans-serif;
+  font-family: "Trebuchet MS", sans-serif;
   height: 1800px;
+  padding: 0px 20px 0px 20px;
 }
 
 a {
   color: #DFDFDF;
   text-decoration: none;
+}
+
+ul {
+  padding: 0px 0px 0px 30px;
+  margin: 0px;
 }
 
 .page {
@@ -21,7 +27,7 @@ a {
 }
 
 .header {
-  position: -webkit-sticky;
+  z-index: 1000;
   position: sticky;
   top: 0;
   background: linear-gradient(180deg, #202020 90%, rgba(0, 212, 255, 0) 100%);
@@ -49,6 +55,7 @@ a {
 .section__title {
   font-weight: normal;
   font-family: "Courier New", sans-serif;
+  margin-bottom: 40px;
   /*
   &:after
   {
@@ -76,10 +83,54 @@ a {
   padding-bottom: 100px;
 }
 
+.timeline {
+  border-left: solid 1px DimGray;
+  padding-left: 30px;
+}
+.timeline__element {
+  margin-bottom: 40px;
+}
+.timeline__element:before {
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: DimGray;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  left: -35px;
+}
+.timeline__element + .timeline__element {
+  padding-top: 30px;
+}
+.timeline__title {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 0px 15px 0px -15px;
+  display: inline-block;
+}
+.timeline__subtitle {
+  font-style: italic;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+.timeline__subtitle:last-child {
+  margin-bottom: 0px;
+}
+
+.download {
+  color: MediumSeaGreen;
+  background-color: #202020;
+}
+.download:hover {
+  color: LightGreen;
+}
+
+/*
 .btn {
   background-color: DodgerBlue;
   border: none;
-  color: #DFDFDF;
+  color: $secondary-color;
   padding: 10px 20px;
   border-radius: 15px;
   cursor: pointer;
@@ -88,7 +139,7 @@ a {
 .btn:hover {
   background-color: RoyalBlue;
 }
-
+*/
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -101,7 +152,7 @@ a {
   flex-direction: column;
   width: 250px;
   height: 200px;
-  border-radius: 15px;
+  border-radius: 5px;
   background-color: #DFDFDF;
   overflow: hidden;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
@@ -119,4 +170,42 @@ a {
 }
 .card:hover {
   transform: translate(0px, -2px);
+}
+
+.collapsible {
+  background-color: #202020;
+  color: #DFDFDF;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  padding: 15px 10px;
+  border-top: 1px solid DimGray;
+}
+.collapsible:before {
+  content: "+"; /* Unicode character for "plus" sign (+) */
+  color: #DFDFDF;
+  float: left;
+  margin-right: 10px;
+}
+
+.active:before {
+  content: "-"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-bottom: 1px solid DimGray;
+}
+.content__text {
+  margin-left: 30px;
+  padding-bottom: 20px;
+}
+
+.contact {
+  padding-bottom: 40px;
 }/*# sourceMappingURL=main.css.map */
