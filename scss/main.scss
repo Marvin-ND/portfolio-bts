@@ -3,7 +3,7 @@ $header-height: 70px;
 $primary-color:#202020;
 $secondary-color:#DFDFDF;
 $third-color: DimGray;
-$title-font:"Courier New";
+$title-font:"Courier New";//"Courier New";
 
 html{
     scroll-behavior: smooth;
@@ -39,6 +39,7 @@ ul{
     background: linear-gradient(180deg, $primary-color 90%, rgba(0,212,255,0) 100%);
     height:$header-height;
     font-family:$title-font;
+    font-size: 1.1em;
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -54,6 +55,26 @@ ul{
     }
 }
 
+.localisation{
+    font-size: 0.9em;
+}
+
+.competences{
+    border-left: solid 1px $third-color;
+    list-style-type: none;
+}
+
+.home{
+    display:flex;
+    gap: 250px;
+}
+
+.titles{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
 .section{
     display: flex;
     align-items: center;
@@ -62,7 +83,11 @@ ul{
     &__title{
         font-weight: normal;
         font-family: $title-font, sans-serif;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
+
+        &--first{
+            margin-bottom: 10px;
+        }
 
         /*
         &:after
@@ -144,8 +169,21 @@ ul{
     background-color: $primary-color;
     
     &:hover{
-    color:LightGreen;
+        color:LightGreen;
     }
+}
+
+.download_btn{
+    color:$primary-color;
+    background-color: MediumSeaGreen;
+    
+    &:hover{
+        color:MediumSeaGreen;
+        background-color: $primary-color;
+    }
+    border: 1px solid MediumSeaGreen;
+    padding:5px 10px;
+    border-radius: 20px;
 }
 
 /*
