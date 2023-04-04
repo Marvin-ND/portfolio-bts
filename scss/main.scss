@@ -44,6 +44,10 @@ ul{
     align-items: center;
     justify-content: space-between;
 }
+.link{
+    color:red;
+    &:hover{color: orange;};
+}
 
 .menu{
     display:flex;

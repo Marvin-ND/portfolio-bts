@@ -39,6 +39,13 @@ ul {
   justify-content: space-between;
 }
 
+.link {
+  color: red;
+}
+.link:hover {
+  color: orange;
+}
+
 .menu {
   display: flex;
   padding: 0;
